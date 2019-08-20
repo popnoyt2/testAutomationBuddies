@@ -28,4 +28,14 @@ public class autoPractice {
         return x % 2 != 0;
     }
 
+    public String checkOutElina(String[] names) {
+        String name = "Elina";
+        if (names[2] == name) {
+            return name;
+        } else return "";
+    }
+
+    public boolean canDivide(int number) {
+        return number % 5 == 0;
+    }
 }

@@ -1,3 +1,5 @@
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -45,6 +47,19 @@ public class autoPracticeTests {
         Boolean actual = autoPractice.isPrime(num);
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void isNameElina() {
+        autoPractice practice = new autoPractice();
+        String[] a = {"Luca", "Tom", "Elina"};
+        assertEquals("Elina", practice.checkOutElina(a));
+    }
+
+
+
+
+
+
 /*Tests from practice on the lesson
     @Test
     public void is15GoodOne() {
