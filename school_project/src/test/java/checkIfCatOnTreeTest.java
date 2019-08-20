@@ -1,3 +1,5 @@
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -38,5 +40,25 @@ public class checkIfCatOnTreeTest {
         String expected = name + ",please check again." + answer + "is not a valid answer:)";
 
         assertEquals(expected, catsOnTree.checkIfCatOnTree(answer, name));
+    }
+
+    int number = 15;
+    static autoPractice autoPractice;
+
+    /*@BeforeAll
+    public void init() {
+        System.out.println("Checkin can be divided");
+        autoPractice = new autoPractice();
+    }*/
+
+    @Test
+    public void divideByFile() {
+        assertEquals(true, autoPractice.canDivide(number));
+    }
+
+    @AfterAll
+    public void init2() {
+        System.out.println("Test finish");
+        autoPractice = null;
     }
 }
