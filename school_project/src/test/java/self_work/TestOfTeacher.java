@@ -56,10 +56,6 @@ public class TestOfTeacher {
         pupilList.add(pupi12);
         pupilList.add(pupil);
         school.setPupils(pupilList);
-        System.out.println(pupilList);
-        for (Pupil p : pupilList) {
-            System.out.println(p.getAverageScore());
-        }
         assertEquals(true, teacher.isSchoolSuccess(school), "Check if school is successful");
     }
 
@@ -72,10 +68,6 @@ public class TestOfTeacher {
         pupilList.add(pupi12);
         pupilList.add(pupil);
         school.setPupils(pupilList);
-        System.out.println(pupilList);
-        for (Pupil p : pupilList) {
-            System.out.println(p.getAverageScore());
-        }
         assertEquals(false, teacher.isSchoolSuccess(school), "Check if school is not successful");
     }
 }
