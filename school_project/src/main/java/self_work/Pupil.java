@@ -1,3 +1,5 @@
+package self_work;
+
 public class Pupil {
 
     private String name;
@@ -16,7 +18,6 @@ public class Pupil {
         this.name = name;
         this.surname = surname;
     }
-
 
 
 }
